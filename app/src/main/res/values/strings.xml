@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ClassRoomStudentV2</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Inser_id">Please Insert Your ID</string>
+    <string name="login">Log  In</string>
+    <string name="unable_to_connect_server">No server Found Please Check server and reOpen</string>
+    <string name="server_found">Class Server Found</string>
+    <string name="user_status">Status:</string>
+    <string name="user_id">USER ID</string>
+    <string name="send">Send</string>
+    <string name="password">PASSWORD</string>
+    <string name="noseverfound">No Server Found, Restart Application</string>
+    <string name="text_here">Text Here</string>
+    <string name="btn_send">SEND</string>
+    <string name="show_exam_result">Exam Results</string>
+    <string name="active_users">Classroom</string>
+    <string name="connectionfail">Connection Failed</string>
+
+    <string-array name="client_status">
+        <item>On Line</item>
+        <item>Offline</item>
+    </string-array>
+    <string name="title_activity_monitor">MonitorActivity</string>
+    <!-- new values here -->
+    <string name="forward_item">Forward Item</string>
+    <string name="show_on_monitor">Monitor Display</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+
+    <string name="exit_app">sign out</string>
+
+    <string name="mcq_question">MCQ </string>
+    <string name="fill_question">Fill Gap </string>
+    <string name="truefalse_question">True or False </string>
+    <string name="finish_exam">Finish </string>
+    <string name="tue_answer">TRUE</string>
+    <string name="false_answer">FALSE </string>
+    <string name="radiotrue">TRUE</string>
+    <string name="radiofalse">FALSE</string>
+
+</resources>

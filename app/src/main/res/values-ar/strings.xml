@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name"> تطبيق الطالب ن1 </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Inser_id">الرجاء ادخال البيانات</string>
+    <string name="login">دخول</string>
+    <string name="unable_to_connect_server">السيرفر غير متوفر حالياً</string>
+    <string name="server_found">تم العثور على السيرفر</string>
+    <string name="user_status">الحالة</string>
+    <string name="user_id">رقم المستخدم</string>
+    <string name="send">إرسال</string>
+    <string name="password">كلمة المرور</string>
+    <string name="noseverfound">لم يتم العثورعلى سيرفر</string>
+    <string name="text_here">النص هنا</string>
+    <string name="btn_send">إرسال</string>
+    <string name="finish_exam">انهاء الاختبار</string>
+    <string name="show_exam_result">اظهار نتيجة الاختبار</string>
+    <string name="active_users">الغرفة الدراسية</string>
+
+    <string-array name="client_status">
+        <item>متوفر</item>
+        <item>غير متوفر</item>
+    </string-array>
+    <string name="title_activity_monitor">MonitorActivity</string>
+    <!-- new values here -->
+    <string name="forward_item">إعادة توجيه</string>
+    <string name="show_on_monitor">عرض على الشاشة</string>
+    <string name="zoom_in">تكبير</string>
+    <string name="zoom_out">تصغير</string>
+
+    <string name="exit_app">تسجيل خروج</string>
+
+</resources>

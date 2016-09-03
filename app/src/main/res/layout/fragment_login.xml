@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.abd.classroom1.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Inser_id"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="60dp"
+        android:id="@+id/view">
+        <EditText
+            android:layout_width="fill_parent"
+            android:hint="@string/user_id"
+            android:id="@+id/user_id_editext"
+            android:layout_height="fill_parent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view2">
+        <EditText
+            android:layout_width="fill_parent"
+            android:hint="@string/password"
+            android:id="@+id/user_password_editext"
+            android:layout_height="fill_parent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/login_button"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/rounded_login_buton"
+        android:textColor="@color/white"
+        android:layout_below="@+id/wrong_user_name"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/noseverfound"
+        android:id="@+id/noservertextview"
+        android:textColor="#d66a6a"
+        android:textStyle="bold"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/wrong_user_name"
+        android:textColor="#d66a6a"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_view"
+        android:layout_below="@+id/noservertextview"
+        android:layout_alignLeft="@+id/noservertextview"
+        android:layout_alignStart="@+id/noservertextview" />
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sendbutton">#FF8F00</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_msg_input">#f9f9f9</color>
+    <color name="text_msg_input">#02b4e2</color>
+    <color name="bg_btn_join">#02b4e2</color>
+    <color name="test">#3998dc</color>
+    <color name="sendtxtback">#d8dbde</color>
+    <color name="press_button">#34d7e9</color>
+
+    <color name="colorPrimary">#7B1FA2</color>
+    <color name="colorPrimaryDark">#6A1B9A</color>
+    <color name="colorAccent">#EA80FC</color>
+    <color name="list_divider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="lblFromName">#777777</color>
+    <color name="title_gray">#434343</color>
+    <color name="bg_msg_you">#5eb964</color>
+
+    <color name="green">#328917</color>
+
+    <color name="true_false_question">#ECEFF1</color>
+    <color name="fillgap_question">#B2EBF2</color>
+    <color name="exam_lis_tbg">#FFE082</color>
+    <color name="mcq_question">#B0BEC5</color>
+    <color name="black">#FF000000</color>
+
+
+</resources>
