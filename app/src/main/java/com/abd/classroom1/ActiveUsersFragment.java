@@ -158,8 +158,7 @@ public class ActiveUsersFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 OnFragmentInteractionListener aa = (OnFragmentInteractionListener)getActivity();
                 aa.ShowMessagesViewer(l1.get(position));
-
-
+                l1.get(position).unreadMsgCounter =0;
                 Log.d("Hello","Item Clicked");
                 Toast.makeText(getActivity().getApplicationContext(), "hello : " + l1.get(position).getClientName(), Toast.LENGTH_SHORT).show();
             }

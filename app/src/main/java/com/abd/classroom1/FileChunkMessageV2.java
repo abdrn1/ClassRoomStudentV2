@@ -5,9 +5,9 @@ package com.abd.classroom1;
  */
 public class FileChunkMessageV2 {
 
-    final static String FILE = "FILE";
-    final static String EXAM = "EXAM";
-    final static String CAPTURE = "CAPTURE";
+    public  final static String FILE = "FILE";
+    public final static String EXAM = "EXAM";
+    public  final static String CAPTURE = "CAPTURE";
 
     byte[] chunk; // chunk of bytes from the file;
     String senderID;

@@ -141,9 +141,17 @@ public class ExamRowAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         } else if (questionsList.get(position).getQuestionType().toUpperCase().equals(QuestionItem.MFILL)) {
             final FillGapViewHolder fillGapViewHolder = (FillGapViewHolder) holder;
             QuestionItem cqi = questionsList.get(position);
-            String[] splitQuestion = cqi.getQuestionText().split("#gap#", 2);
-            fillGapViewHolder.questionPart1.setText(splitQuestion[0]);
-            fillGapViewHolder.questionPart2.setText(splitQuestion[1]);
+            if(cqi.getQuestionText().contains("#gap#")) {
+                String[] splitQuestion = cqi.getQuestionText().split("#gap#", 2);
+                fillGapViewHolder.questionPart1.setText(splitQuestion[0]);
+
+                fillGapViewHolder.questionPart2.setText(splitQuestion[1]);
+            }else{
+                fillGapViewHolder.gappart.setVisibility(View.GONE);
+                fillGapViewHolder.questionPart1.setText(cqi.getQuestionText());
+                fillGapViewHolder.questionPart2.setText("");
+
+            }
             fillGapViewHolder.textWatcher.updatePosition(position);
             fillGapViewHolder.answerEditText.setText(cqi.getStudentQuestionAnswer());
             fillGapViewHolder.answerEditText.setTag(cqi);

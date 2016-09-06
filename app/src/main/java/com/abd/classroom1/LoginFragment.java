@@ -96,7 +96,9 @@ public class LoginFragment extends Fragment {
                 EditText idText = (EditText) getActivity().findViewById(R.id.user_id_editext);
                 String userID = idText.getText().toString();
                 if(client !=null && client.isConnected()) {
-                    client.sendTCP(new UserLogin(userID, "TEACHER"));
+                  UserLogin a1 =  new UserLogin(userID, "TEACHER");
+                    mListener.setLoginDetails(a1);
+                    client.sendTCP(a1);
                 }
             }
         });
@@ -135,6 +137,7 @@ public class LoginFragment extends Fragment {
         super.onAttach(activity);
         mListener =(OnFragmentInteractionListener) activity;
 
+
     }
 
     @Override
@@ -158,6 +161,8 @@ public class LoginFragment extends Fragment {
         public void onFragmentInteraction(Uri uri);
         public void setSuccessfulLogin(UserLogin ul);
         public void researchforServer();
+        public void setLoginDetails(UserLogin u);
+
     }
 
 }

@@ -19,6 +19,7 @@ import java.util.List;
 public class FillGapViewHolder extends RecyclerView.ViewHolder {
     public TextView questionPart1;
     public TextView questionPart2;
+    public TextView gappart;
     public EditText answerEditText;
     public ExamRowTextChangeWatcher textWatcher;
     List<QuestionItem> list;
@@ -29,6 +30,7 @@ public class FillGapViewHolder extends RecyclerView.ViewHolder {
         questionPart1 = (TextView) itemView.findViewById(R.id.textpart1);
         questionPart2 = (TextView) itemView.findViewById(R.id.textpart2);
         answerEditText = (EditText) itemView.findViewById(R.id.et_answer);
+        gappart =  (TextView) itemView.findViewById(R.id.gap);
         this.textWatcher = tw;
         answerEditText.addTextChangedListener(tw);
 

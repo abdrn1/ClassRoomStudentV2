@@ -21,10 +21,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+
         android:theme="@style/AppTheme">
 
         <activity
             android:name=".MainActivity"
+            android:launchMode="singleTask"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -45,6 +47,12 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name=".service.MessageService"
+            android:enabled="true"
+            android:exported="true"></service>
+
     </application>
 
 </manifest>

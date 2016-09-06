@@ -2,6 +2,8 @@ package com.abd.classroom1;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -72,6 +74,8 @@ public class MessageViewerFragment extends Fragment {
     private MessagesListAdapter mLAdapter;
     private String capturedImagePath="";
     private ClientModel reciverClient;
+    private CmImageViewerFragment imageViwerFrag;
+    private static final int IMGVIWER = 6;
 
 
     public MessageViewerFragment() {
@@ -138,8 +142,12 @@ public class MessageViewerFragment extends Fragment {
                     String savePath;
                    // String fname = (l1.get(position)).getSimpleMessage();
                    // String savePath = Environment.getExternalStorageDirectory().getPath();
-                    savePath = (l1.get(position)).getFilepath();
-                    GeneralUtil.openImage(getActivity(), savePath);
+                   savePath = (l1.get(position)).getFilepath();
+                  //  GeneralUtil.openImage(getActivity(), savePath);
+
+                    mListener.showImageViewer(savePath);
+
+
                 }
 
             }
@@ -172,6 +180,9 @@ public class MessageViewerFragment extends Fragment {
                          //   client.sendTCP(new CommandsMessages(1.2));
                         }else if(item.getItemId() == R.id.zoomOUT){
                           //  client.sendTCP(new CommandsMessages(0.9));
+                        }else if(item.getItemId() == R.id.open_external){
+                            String savePath = (l1.get(position)).getFilepath();
+                             GeneralUtil.openImage(getActivity(), savePath);
                         }
                         return true;
                     }
@@ -466,6 +477,9 @@ public class MessageViewerFragment extends Fragment {
             ChatMessageModel chm = new ChatMessageModel(simplem.getSenderName(), "", "TXT", simplem.getTextMessage(), fromMe);
             l1.add(chm);
 
+        }else if(simplem.getMessageType().equals("OK")) {
+            ChatMessageModel chm = new ChatMessageModel(simplem.getSenderName(), "", "OK", simplem.getTextMessage(), fromMe);
+            l1.add(chm);
         }
 
     }
@@ -566,6 +580,7 @@ public class MessageViewerFragment extends Fragment {
         // TODO: Update argument type and name
         // public void onFragmentInteraction(Uri uri);
         void onFragmentInteraction(int fragmentID);
+        void showImageViewer(String imagePath);
 
         void addNewTextMessageFromMessageViewer(SimpleTextMessage sm);
     }

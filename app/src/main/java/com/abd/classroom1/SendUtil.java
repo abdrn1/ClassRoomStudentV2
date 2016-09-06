@@ -175,7 +175,9 @@ public class SendUtil {
             return true;
         } else {
             try {
-                SendUtil.reConnect(cl, iam);
+                //SendUtil.reConnect(cl, iam);
+                cl.reconnect();
+                cl.sendTCP(iam);
                 return  true;
             } catch (Exception ex1) {
                 return false;
@@ -189,14 +191,14 @@ public class SendUtil {
     public static void reConnect(Client cl, UserLogin iam) throws Exception {
 
         if ((cl != null) && (iam != null)) {
-            if (!cl.isConnected()) {
+            if ( !cl.isConnected()) {
                 cl.reconnect();
                 cl.sendTCP(iam);
                 Log.d("con", "Try To Reconnect");
                 Log.d("con", "Iam " + iam.getUserID());
                 Log.d("con", "Iam " + iam.getUserType());
-
             }
+
         }
 
     }

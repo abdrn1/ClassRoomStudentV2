@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CmImageViewerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/img_curr_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" />
+
+    <LinearLayout
+        android:id="@+id/msgv_moractions"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:weightSum="3"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_zoomin"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_width="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/circle_shape"
+            android:src="@drawable/imgvzoomin" />
+        <ImageButton
+            android:id="@+id/btn_zoomout"
+            android:layout_width="42dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/circle_shape"
+            android:src="@drawable/imgvzoomout" />
+        <ImageButton
+            android:id="@+id/btn_rotate"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/circle_shape"
+            android:src="@drawable/imgvrotate" />
+    </LinearLayout>
+</LinearLayout>
